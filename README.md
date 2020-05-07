@@ -1,3 +1,1 @@
-# codersrank-template-pchqpf
-
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/codersrank-template-pchqpf)
+This repo is for learning front end developement from the ground up.
