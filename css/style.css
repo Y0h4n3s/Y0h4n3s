@@ -1,56 +1,81 @@
-/*    h1, h2, h3, h4, h5, h6, p, a, ul, ol, li, small {
-      margin: 0;
-      padding: 0;
-      border: 0;
-      outline: 0;
-      font-size: 100%;
-      background: transparent; }*/
-
-html {
-    background-image: url('../images/6342301.jpg');
-    font-family: monospace;
-}
-
-head {
-    margin: 0;
+body {
     padding: 0;
+    margin: 0;
+    background: #f2f6e9;
 }
 
-nav {}
+
+/*--- navigation bar ---*/
 
 body {
-    margin: 0;
+    background-image: url('../images/tablepichq.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #f2f6e9;
 }
 
-#loginregister {
-    display: block;
-    justify-self: first baseline;
+.description button {
+    border: 1px solid #6ab446;
+    background: #6ab446;
+    border-radius: 0;
+    color: #fff;
 }
 
-.navbox {
-    margin: inherit;
-    padding: 17px;
-    display: flex;
-    flex-direction: row;
-    background-color: black;
+.description button:hover {
+    border: 1px solid #fff;
+    background: #fff;
+    color: #000;
 }
 
-.nav {
-    list-style: none;
-    display: block;
+.overlay {
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.4);
 }
 
-.navlink {
-    text-decoration: none;
+.nav-link,
+.navbar-brand {
+    cursor: pointer;
     color: white;
-    padding: 15px;
-    font-size: 20px;
-    transition-duration: 0.3s;
 }
 
-.navlink:hover {
-    background-color: white;
-    border-radius: .4em;
-    color: black;
-    transform: scale(108%);
+.navbar-brand:hover {
+    color: #f2f6e9;
+}
+
+.nav-link {
+    margin-right: 1em !important;
+    font-size: large;
+}
+
+.nav-link:hover {
+    box-shadow: black;
+    color: #f2f6e9;
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+.description {
+    left: 50%;
+    position: absolute;
+    top: 45%;
+    transform: translate(-50%, -55%);
+    text-align: center;
+}
+
+.description h1 {
+    color: #6ab446;
+}
+
+.description p {
+    color: #fff;
+    font-size: 1.3rem;
+    line-height: 1.5;
 }
