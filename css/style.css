@@ -1,0 +1,56 @@
+/*    h1, h2, h3, h4, h5, h6, p, a, ul, ol, li, small {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      outline: 0;
+      font-size: 100%;
+      background: transparent; }*/
+
+html {
+    background-image: url('../images/6342301.jpg');
+    font-family: monospace;
+}
+
+head {
+    margin: 0;
+    padding: 0;
+}
+
+nav {}
+
+body {
+    margin: 0;
+}
+
+#loginregister {
+    display: block;
+    justify-self: first baseline;
+}
+
+.navbox {
+    margin: inherit;
+    padding: 17px;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+}
+
+.nav {
+    list-style: none;
+    display: block;
+}
+
+.navlink {
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    font-size: 20px;
+    transition-duration: 0.3s;
+}
+
+.navlink:hover {
+    background-color: white;
+    border-radius: .4em;
+    color: black;
+    transform: scale(108%);
+}
