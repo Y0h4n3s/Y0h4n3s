@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css?family=Kaushan+Script");
+* {
+    font-family: "Kaushan Script", cursive;
+}
+
+#search-icon {
+    background-color: violet;
+}
+
+#popup {
+    display: block;
+}
+
+.banner-title {
+    color: violet;
+}
+
+.buttons {
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+.buttons:hover {
+    background-color: violet;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.store-item:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
