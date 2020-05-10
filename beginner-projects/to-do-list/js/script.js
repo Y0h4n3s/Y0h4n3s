@@ -28,13 +28,13 @@ function submitTodo(event) {
     const completeBtn = document.createElement('button');
     completeBtn.classList.add('complete-btn');
     completeBtn.classList.add('todo-div-btn');
-    completeBtn.innerHTML = 'Completed';
+    completeBtn.innerHTML = '<i class="fa fa-check" ></i>';
     todoDiv.appendChild(completeBtn);
 
     const deleteBtn = document.createElement('button');
     deleteBtn.classList.add('delete-btn');
     deleteBtn.classList.add('todo-div-btn');
-    deleteBtn.innerHTML = 'Delete';
+    deleteBtn.innerHTML = '<i class="fa fa-trash" ></i>';
     todoDiv.appendChild(deleteBtn);
 
     //Adding the div to the document
@@ -47,6 +47,20 @@ function deleteCheck(event) {
     const trigerrer = event.target;
     if (trigerrer.classList[0] === 'delete-btn') {
         const item = trigerrer.parentElement;
-        item.remove();
+        item.classList.add('scale-up');
+        item.addEventListener('transitionend', function() {
+            item.classList.add('fall');
+            item.addEventListener('transitionend', function() {
+                item.remove();
+            });
+        });
+
+    }
+
+    if (trigerrer.classList[0] === 'complete-btn') {
+        console.log('passed condition')
+        const item = trigerrer.parentElement;
+        console.log(item)
+        item.classList.toggle('completed');
     }
 }
