@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.css" integrity="sha256-2SjB4U+w1reKQrhbbJOiQFARkAXA5CGoyk559PJeG58=" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
     <title>Todo List</title>
 </head>
 
@@ -17,7 +18,15 @@
     <form>
         <input type="text" name="todo-input" class="todo-input">
         <button class="submit-todo-btn"> + </button>
+        <div class="select">
+            <select name="todos" class="select-filter">
+                <option value="all">All</option>
+                <option value="completed">Completed</option>
+                <option value="incomplete">Incomplete</option>
+            </select>
+        </div>
     </form>
+
 
     <div class="todo-container">
         <ul class="todo-list"></ul>
