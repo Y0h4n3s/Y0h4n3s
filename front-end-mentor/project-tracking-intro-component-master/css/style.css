@@ -19,11 +19,14 @@ header {
   grid-row-start: header-start;
   grid-row-end: header-main-gap-start;
   grid-template-columns: [logo-start] 55% [nav-start] 45%;
-  overflow-x: visible; }
+  overflow-x: visible;
+  height: auto; }
   header .logo-display {
     grid-column-start: logo-start;
     grid-column-end: nav-start;
-    margin-left: 6%; }
+    margin-left: 6%;
+    height: 100%;
+    width: 100%; }
   header nav {
     overflow-x: visible;
     grid-column-start: nav-start;
@@ -120,7 +123,7 @@ main {
     grid-column-start: feature-display;
     grid-column-end: ending;
     grid-row-end: 2;
-    overflow-x: hidden; }
+    overflow: hidden; }
     main .product-feature .devices {
       height: 100%; }
 
@@ -130,7 +133,7 @@ footer {
   grid-row-start: main-end;
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 400;
-  padding: 0 5vw; }
+  padding: 10vh 5vw; }
   footer a {
     color: #5b5f71; }
 

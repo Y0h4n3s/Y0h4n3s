@@ -23,10 +23,13 @@ header {
     grid-row-end: header-main-gap-start;
     grid-template-columns: [logo-start] 55% [nav-start] 45%;
     overflow-x: visible;
+    height: auto;
     .logo-display {
         grid-column-start: logo-start;
         grid-column-end: nav-start;
         margin-left: 6%;
+        height: 100%;
+        width: 100%;
     }
     nav {
         img {
@@ -140,7 +143,7 @@ main {
         grid-column-start: feature-display;
         grid-column-end: ending;
         grid-row-end: 2;
-        overflow-x: hidden;
+        overflow: hidden;
         .devices {
             height: 100%;
         }
@@ -153,7 +156,7 @@ footer {
     grid-row-start: main-end;
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 400;
-    padding: 0 5vw;
+    padding: 10vh 5vw;
     a {
         color: hsl(230, 11%, 40%);
     }
