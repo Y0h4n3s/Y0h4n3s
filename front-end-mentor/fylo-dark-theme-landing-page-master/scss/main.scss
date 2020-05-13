@@ -1,0 +1,52 @@
+@import 'feature-intro';
+@import 'features';
+@import 'benefits';
+@import 'feedbacks';
+@import 'subscription-pad';
+main {
+    font-family: $open-sans;
+    font-weight: 400;
+    position: relative;
+    h1 {
+        font-family: $rale-way;
+        font-weight: bold;
+        font-size: 2.5vw;
+    }
+    h3 {
+        font-size: 2.5vw;
+    }
+    p,
+    a {
+        font-size: 1.5vw;
+    }
+}
+
+@media screen and (max-width:1000px) and (min-width: 500px) {
+    h1 {
+        font-family: $rale-way;
+        font-weight: bold;
+        font-size: 3vw;
+    }
+    h3 {
+        font-size: 3vw;
+    }
+    p,
+    a {
+        font-size: 1vw;
+    }
+}
+
+@media screen and (max-width:500px) {
+    h1 {
+        font-family: $rale-way;
+        font-weight: bold;
+        font-size: 4vw;
+    }
+    h3 {
+        font-size: 4vw;
+    }
+    p,
+    a {
+        font-size: 3vw;
+    }
+}

@@ -1,0 +1,54 @@
+.benefits {
+    margin: 0 10%;
+    display: flex;
+    justify-content: space-between;
+    img {
+        max-width: 100%;
+        display: block;
+        margin-right: 5%;
+    }
+    article {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        h1 {
+            max-width: 50%;
+        }
+        p {
+            margin-top: 2%;
+        }
+        a {
+            width: 100%;
+            display: flex;
+            margin-top: 2%;
+            color: $cyan;
+            text-decoration-skip: none;
+            span {
+                padding-top: 5px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 500px) {
+    .benefits {
+        flex-direction: column;
+        margin: 0 15%;
+        img {
+            width: 100%;
+        }
+        article {
+            margin: 10%;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        p {
+            margin: 0 20%;
+        }
+        a {
+            margin-left: 70%;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+.features {
+    margin: 10% 10%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    text-align: center;
+    .feature {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 5% 0;
+        img {
+            display: inline;
+        }
+        p {
+            max-width: 70%;
+        }
+        h3 {
+            margin: 3% 0;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .features {
+        display: flex;
+        flex-direction: column;
+    }
+}

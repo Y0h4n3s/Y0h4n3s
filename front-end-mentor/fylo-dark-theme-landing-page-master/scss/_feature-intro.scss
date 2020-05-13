@@ -1,0 +1,21 @@
+.feature-intro {
+    margin-top: 1vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img {
+        max-width: 100%;
+    }
+    article {
+        margin-top: 7%;
+        max-width: 50%;
+        text-align: center;
+        p {
+            margin: 4% 12%;
+        }
+        button {
+            font-size: 2vw;
+        }
+    }
+}

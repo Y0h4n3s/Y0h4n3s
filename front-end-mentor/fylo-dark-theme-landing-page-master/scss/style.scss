@@ -1,0 +1,33 @@
+@import 'colors';
+@import 'fonts';
+@import 'header';
+@import 'main';
+@import 'footer';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $main-background;
+    color: $neutral-white-text;
+}
+
+button {
+    background-color: $blue;
+    padding: 12px 50px;
+    border: none;
+    font-size: 1em;
+    color: $neutral-white-text;
+    border-radius: 15%/60%;
+}
+
+button:hover {
+    background-color: $cyan;
+    color: $footer-background;
+}
+
+p {
+    line-height: 1.3em;
+}

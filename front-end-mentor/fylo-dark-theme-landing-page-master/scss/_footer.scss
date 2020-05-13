@@ -1,0 +1,62 @@
+footer {
+    padding: 100px 5%;
+    margin-top: 5%;
+    background-color: $footer-background;
+    font-family: $open-sans;
+    position: relative;
+    .footer-container {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        article {
+            display: flex;
+            max-width: 35%;
+        }
+        ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            li {
+                margin: 5px 0;
+                a {
+                    color: $neutral-white-text;
+                    text-decoration: none;
+                }
+            }
+        }
+        .social-media {
+            display: flex;
+            justify-content: space-evenly;
+            width: 100px;
+        }
+    }
+}
+
+h1 {
+    font-size: 2.5vw;
+}
+
+p,
+a,
+button {
+    font-size: 1.5vw;
+}
+
+@media screen and (max-width:1000px) and (min-width: 500px) {
+    h1 {
+        font-family: $rale-way;
+        font-weight: bold;
+        font-size: 3vw;
+    }
+    h3 {
+        font-size: 3vw;
+    }
+    p,
+    a,
+    button {
+        font-size: 1.5vw;
+    }
+    img {
+        margin-top: 10%;
+    }
+}

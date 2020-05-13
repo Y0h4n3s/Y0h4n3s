@@ -1,0 +1,44 @@
+header {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    margin-top: 7vh;
+    font-family: $rale-way;
+    img {
+        justify-self: center;
+        align-self: center;
+        display: block;
+        width: 100%;
+    }
+    nav {
+        grid-area: 1 2 2 3;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        ul {
+            margin-left: auto;
+            width: 100%;
+            list-style: none;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            li {
+                margin-right: 8%;
+                a {
+                    text-decoration: none;
+                    color: $neutral-white-text;
+                }
+                a:hover {
+                    color: $cyan;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1000px) and (min-width: 500px) {
+    header {
+        img {
+            margin: 15%;
+        }
+    }
+}
