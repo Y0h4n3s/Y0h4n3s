@@ -1,0 +1,165 @@
+/*
+ this part is just to lay out the overall page
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+
+body {
+    background-image: linear-gradient(0deg, #282928 40%, #000000 40%, #000000 50%, #282928 50%, #282928 90%, #000000 90%, #000000 100%);
+    background-size: 10.00px 10.00px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+}
+
+section {
+    min-width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 2%;
+    padding: 2% 3%;
+    border: 1px solid rgb(224, 201, 97);
+}
+
+.buttons {
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+/*
+Facebook style buttons
+*/
+
+
+/*Facebook blue button*/
+
+.facebook-button-dark {
+    cursor: pointer;
+    border-radius: 2px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 6px 12px;
+    -moz-box-shadow: inset 0 1px 0 0 #4d73bf;
+    -webkit-box-shadow: inset 0 1px 0 0 #4d73bf;
+    box-shadow: inset 0 1px 0 0 #4d73bf;
+    background: #4267b2;
+    border: solid 1px #4267b2;
+    color: white;
+    text-shadow: 0 1px 0 #3339a5;
+}
+
+.facebook-button-dark:hover {
+    background: #2b54a7;
+}
+
+.facebook-button-dark:active {
+    background: #1d4698;
+    border-color: #1d4698;
+}
+
+
+/*facebook light buttons*/
+
+.facebook-button-light {
+    border-radius: 2px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    padding: 6px 12px;
+    background: #f6f7f9;
+    border: solid 1px #ced0d4;
+    color: #4b4f56;
+}
+
+.facebook-button-light:hover {
+    background: #e9ebee;
+}
+
+.facebook-button-light:active {
+    background: #d8dade;
+    border-color: #d8dade;
+}
+
+
+/* 
+3D Style Buttons
+*/
+
+
+/* 3D rectangle*/
+
+.btn-3d-rectangle {
+    position: relative;
+    background: orangered;
+    border: none;
+    color: white;
+    padding: 15px 24px;
+    font-size: 1.5rem;
+    box-shadow: -6px 6px 0 hsl(16, 100%, 30%);
+    outline: none;
+}
+
+.btn-3d-rectangle:hover {
+    background: hsl(16, 100%, 40%);
+}
+
+.btn-3d-rectangle:active {
+    background: hsl(16, 100%, 45%);
+    top: 3px;
+    left: -3px;
+    box-shadow: -3px 3px 0 hsl(16, 100%, 30%);
+}
+
+
+/* 3D Circle*/
+
+.btn-3d-circle {
+    position: relative;
+    background: #ecd300;
+    background: -webkit-radial-gradient(hsl(54, 100%, 50%), hsl(54, 100%, 40%));
+    background: -o-radial-gradient(hsl(54, 100%, 50%), hsl(54, 100%, 40%));
+    background: -moz-radial-gradient(hsl(54, 100%, 50%), hsl(54, 100%, 40%));
+    background: radial-gradient(hsl(54, 100%, 50%), hsl(54, 100%, 40%));
+    font-size: 1.5rem;
+    text-shadow: 0 -1px 0 #c3af07;
+    color: white;
+    outline: none;
+    border: solid 1px hsl(54, 100%, 20%);
+    z-index: 4;
+    border-radius: 100%;
+    height: 120px;
+    width: 120px;
+    box-shadow: inset 0 1px 0 hsl(54, 100%, 50%), 0 2px 0 hsl(54, 100%, 20%), 0 3px 0 hsl(54, 100%, 18%), 0 4px 0 hsl(54, 100%, 16%), 0 5px 0 hsl(54, 100%, 14%), 0 6px 0 hsl(54, 100%, 12%), 0 7px 0 hsl(54, 100%, 10%), 0 8px 0 hsl(54, 100%, 8%), 0 9px 0 hsl(54, 100%, 6%);
+}
+
+.btn-3d-circle:hover {
+    background: -webkit-radial-gradient(hsl(54, 100%, 45%), hsl(54, 100%, 35%));
+    background: -o-radial-gradient(hsl(54, 100%, 45%), hsl(54, 100%, 35%));
+    background: -moz-radial-gradient(hsl(54, 100%, 45%), hsl(54, 100%, 35%));
+    background: radial-gradient(hsl(54, 100%, 45%), hsl(54, 100%, 35%));
+}
+
+.btn-3d-circle:active {
+    background: -webkit-radial-gradient(hsl(54, 100%, 43%), hsl(54, 100%, 33%));
+    background: -o-radial-gradient(hsl(54, 100%, 43%), hsl(54, 100%, 33%));
+    background: -moz-radial-gradient(hsl(54, 100%, 43%), hsl(54, 100%, 33%));
+    background: radial-gradient(hsl(54, 100%, 43%), hsl(54, 100%, 33%));
+    top: 2px;
+    box-shadow: inset 0 1px 0 hsl(54, 100%, 50%), 0 2px 0 hsl(54, 100%, 20%);
+}
