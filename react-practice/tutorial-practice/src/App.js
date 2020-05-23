@@ -1,25 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 /* import NavBar from './components/NavBar'
 import MainContent from './components/MainContent'
 import Footer from './components/Footer' */
 import TodoItem from './components/TodoItem.js'
+import TodoData from './components/TodoData'
 
 
-function App() {
-  return (
-    <>
-      <ul className="todo-items">
-        <TodoItem />
-        <TodoItem />
-        <TodoItem />
-        <TodoItem />
-        <TodoItem />
-        
-      </ul>
-    </>
-  );
+class App extends React.Component {
+    constructor() {
+        super();
+        this.state = TodoData.map(todo => <TodoItem key={todo.id} todo={todo} />);
+    }
+    render() {
+        return <ul className='todo-items'>{this.state}</ul>;
+    }
+
+
 }
 
 export default App;
