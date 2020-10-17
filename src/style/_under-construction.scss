@@ -1,0 +1,26 @@
+.under-construction-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .construction-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 70%;
+    height: 40vw;
+    margin-bottom: 10%;
+    text-align: center;
+    border-radius: 2%;
+    box-shadow: 0px 10px 25px 0.1px rgba(170, 164, 164, 0.75);
+    .construction-header {
+      margin: 10%;
+      color: $danger-text-color;
+    }
+
+    svg {
+      border-radius: 0 0 2% 2%;
+    }
+  }
+  
+}

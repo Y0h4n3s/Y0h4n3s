@@ -1,0 +1,58 @@
+$nav-padding: 1% 2%;
+$nav-container-margin: 3% 9%;
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: baseline;
+  position: relative;
+  margin: $nav-container-margin;
+  background-color: $primary-color;
+
+  .name-container {
+    display: inline-block;
+    flex: 1;
+    padding: $nav-padding;
+    width: 30px;
+   
+    .fathers-name {
+      color: $info-light-color;
+    }
+    
+  }
+
+  .nav-link-holder {
+    padding: $nav-padding;
+    font-size: 1.1em;
+    .nav-link {
+      text-decoration: none;
+      color: $primary-text-color;
+      position: relative;
+      opacity: 0.8;
+    
+
+      &::after {
+        position: absolute;
+        content: "";
+        height: .1em;
+        top: 100%;
+        background: $secondary-color;
+        z-index: -1;
+        left: 66%;
+        right: 0;
+        transition: left .5s cubic-bezier(0.455, 0.83, 0.25, 0.25);
+        
+      }
+
+      &:hover::after {
+        left: 0%;
+        transform: scaleY(1.5);
+        transition-timing-function: cubic-bezier(.19, 1, .22, 1); 
+      }
+    }
+  }
+  
+
+
+
+}
