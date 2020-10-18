@@ -10,7 +10,7 @@ function App() {
   return (
     <BrowserRouter>
         <nav className="nav-section">
-          <NavigationPanel />
+          <NavigationPanel page='/home'/>
         </nav>
         <main className="main-section">
           <Route  path="/home" component={HomePage} />

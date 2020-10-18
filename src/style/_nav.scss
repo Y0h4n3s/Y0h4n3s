@@ -1,5 +1,9 @@
 $nav-padding: 1% 2%;
 $nav-container-margin: 3% 9%;
+$links-font-size: 1em;
+$name-font-size: 1.3em;
+$links-font-size720px: 0.8em;
+$name-font-size720px: 1em;
 .nav-container {
   display: flex;
   flex-direction: row;
@@ -14,6 +18,7 @@ $nav-container-margin: 3% 9%;
     flex: 1;
     padding: $nav-padding;
     width: 30px;
+    font-size: $name-font-size;
    
     .fathers-name {
       color: $info-light-color;
@@ -24,35 +29,60 @@ $nav-container-margin: 3% 9%;
   .nav-link-holder {
     padding: $nav-padding;
     font-size: 1.1em;
+    position: relative;
     .nav-link {
       text-decoration: none;
       color: $primary-text-color;
       position: relative;
-      opacity: 0.8;
+      opacity: 0.75;
+      font-size: $links-font-size;
     
 
-      &::after {
-        position: absolute;
-        content: "";
-        height: .1em;
-        top: 100%;
-        background: $secondary-color;
-        z-index: -1;
-        left: 66%;
-        right: 0;
-        transition: left .5s cubic-bezier(0.455, 0.83, 0.25, 0.25);
-        
-      }
-
-      &:hover::after {
-        left: 0%;
-        transform: scaleY(1.5);
-        transition-timing-function: cubic-bezier(.19, 1, .22, 1); 
+      
+      
+      &:hover {
+        opacity: 1;
       }
     }
+    .link-selected {
+      opacity: 1;
+    }
+
+    
+    .underline {
+      position: absolute;
+      transform: scaleX(0);
+      background-color: $info-light-color;
+      height: 0em;
+      left: 0;
+      right: 0;
+      top: 80%;
+      
+      height: .4em;
+      border-radius: 100%;
+      transition:   .1s all cubic-bezier(0.75, 0.82, 0.65, 1)    
+    }
+      
+    .underline-nav-link {
+      border-radius: 0%;
+      height: .15em;
+      transform: scaleX(0.55);
+      transition-timing-function: cubic-bezier(0.05, 0.02, 0.165, .1)
+    
+    }
+    
   }
-  
+}
 
+@media all and (max-width: 720px) {
+  .nav-container {
+    .name-container {
+      font-size: $name-font-size720px;
+      text-align: center;
+    }
 
-
+    .nav-link-holder {
+      display: none;
+    }
+  }
 }
