@@ -7,13 +7,22 @@
 @import './variables';
 @import './nav';
 @import './under-construction';
+@import './home-page';
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family:"PT Sans", sans-serif , 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: $primary-color;
+  background-image: url('../images/Large-Triangles.svg');
   max-width: 100%;
+  
+  background-attachment: fixed;
+  
 }
+a {
+  text-decoration: none;
+  color: inherit;
+}
+

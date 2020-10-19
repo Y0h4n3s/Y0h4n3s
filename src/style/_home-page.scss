@@ -1,0 +1,50 @@
+$grid-space-between: 8%;
+
+.home-page-container {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  color: white;
+
+  .page-heading {
+    padding: 0;
+    font-family: 'Cookie', cursive;
+    font-size: 10em;
+
+  }
+
+  h2 {
+    font-size: 4em;
+  }
+
+  h3 {
+    color: $info-light-color;
+    font-size: 2em;
+    margin-bottom: 2%;
+  }
+
+  .profile-link {
+    grid-template-columns: 4fr 1fr;
+
+    background: none;
+    font-size: 1.1em;
+    padding:1% 5%;
+    text-align: center;
+    border: solid;
+    border-radius: 2%/7%;
+    box-shadow: $default-box-shadow;
+      &:hover {
+        background-color: $info-light-color;
+      }
+
+  }
+
+}
+
+@media (max-width: 720px) {
+  .home-page-container {
+    .page-heading {
+      margin-top: 20%;
+    }
+  }
+}
