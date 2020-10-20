@@ -33,11 +33,13 @@ $links-font-weight: 500;
 
   .burger {
     display: none;
+    cursor: pointer;
   }
 
   .frosted-glass {
     display: inherit;
     width: 60%;
+    
     
 
     .nav-links {
@@ -48,7 +50,7 @@ $links-font-weight: 500;
 
       .nav-link-holder {
         padding: $nav-padding;
-        font-size: 1.1em;
+        font-size: 1.2em;
         position: relative;
 
         .nav-link {
@@ -124,6 +126,8 @@ $links-font-weight: 500;
       display: none;
       overflow: hidden;
       border-radius: 4% / 5%;
+      
+
 
       &::before {
         content: '';
